@@ -13,6 +13,10 @@ nav .logo {
     left: 0;
 }
 
+.nav-item {
+    margin: 0 18px;
+}
+
 
 @media(max-width:992px) {
     nav .logo {
