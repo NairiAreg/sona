@@ -36,7 +36,9 @@ nav .logo {
     margin: 5%;
 }
 
-
+.langsLevel2 * {
+    color: black !important;
+}
 
 
 
