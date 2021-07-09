@@ -1,6 +1,7 @@
 var input = document.querySelector("#telephone");
 window.intlTelInput(input,({
   // options here
+  preferredCountries: ["am","us","ru"]
 }));
 
 // input.addEventListener("countrychange", function () {
