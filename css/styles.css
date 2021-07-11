@@ -18,6 +18,24 @@ section {
     margin-top: 150px;
 }
 
+button, a.text-warning {
+    transition: .4s !important;
+}
+
+button.btn-dark:hover {
+    background-color: #ffbc00 !important;
+    color: black !important;
+}
+button.btn-warning:hover {
+    background-color: #212529 !important;
+    color: #ffbc00 !important;
+}
+a.text-warning:hover {
+    background-color: #ffbc00 !important;
+    color: black !important;
+}
+
+
 .logo {
     width: 130px;
 }
@@ -27,6 +45,20 @@ nav .logo {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+nav.fixed-top .bg-white * {
+    color: black !important;
+}
+nav.fixed-top .bg-white .text-warning {
+    color: #ffc107!important;
+}
+
+.scrolled-logo {
+    margin-top: 0px !important;
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 .nav-item {
@@ -135,6 +167,12 @@ nav .logo {
 .border-radius-20 {
     border-radius: 20px;
 }
+
+#contacts {
+    background-color: #747474;
+}
+
+
 
 @media (max-width: 1200px) {
     .nav-item {
