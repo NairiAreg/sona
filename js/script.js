@@ -1,7 +1,7 @@
 var input = document.querySelector("#telephone");
-window.intlTelInput(input,({
+window.intlTelInput(input, ({
   // options here
-  preferredCountries: ["am","us","ru"]
+  preferredCountries: ["am", "us", "ru"]
 }));
 
 // input.addEventListener("countrychange", function () {
@@ -15,3 +15,12 @@ window.intlTelInput(input,({
 // input.addEventListener("close:countrydropdown", function () {
 //     // triggered when the user closes the dropdown
 // });
+
+$(document).ready(function () {
+  $('.slick').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
