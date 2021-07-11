@@ -223,4 +223,18 @@ nav.fixed-top .bg-white .text-warning {
     .mainText p {
         font-size: 12px;
     }
+
+    nav .logo {
+        width: 100px;
+        position: relative;
+        border-radius: 0;
+        height: unset;
+    }
+
+    nav.fixed-top .bg-white * {
+        color: white !important;
+    }
+    nav.fixed-top .bg-white .text-warning {
+        color: #ffc107!important;
+    }
 }
