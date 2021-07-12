@@ -18,6 +18,10 @@ section {
     margin-top: 150px;
 }
 
+button {
+    border: none !important;
+}
+
 /* button, a.text-warning {
     transition: .4s !important;
 } */
