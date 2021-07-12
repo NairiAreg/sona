@@ -18,22 +18,22 @@ section {
     margin-top: 150px;
 }
 
-button, a.text-warning {
+/* button, a.text-warning {
     transition: .4s !important;
-}
+} */
 
-button.btn-dark:hover {
+button.btn-dark:hover,a.btn-dark:hover {
     background-color: #ffbc00 !important;
     color: black !important;
 }
-button.btn-warning:hover {
+/* button.btn-warning:hover {
     background-color: #212529 !important;
     color: #ffbc00 !important;
-}
-a.text-warning:hover {
+} */
+/* a.text-warning:hover {
     background-color: #ffbc00 !important;
     color: black !important;
-}
+} */
 
 
 .img-slider {
@@ -51,11 +51,15 @@ nav .logo {
     left: 0;
 }
 
+nav.fixed-top > div {
+    box-shadow: 0px 3px 20px 0px #00000047;
+}
+
 nav.fixed-top .bg-white * {
     color: black !important;
 }
-nav.fixed-top .bg-white .text-warning {
-    color: #ffc107!important;
+nav.fixed-top .bg-white .btn-dark {
+    color: #fff!important;
 }
 
 .scrolled-logo {
@@ -82,6 +86,15 @@ nav.fixed-top .bg-white .text-warning {
     color: black !important;
 }
 
+#first .row .col-lg-4 {
+    transition: 0.6s;
+    transform: scale(0.95);
+}
+
+#first .row .col-lg-4:hover {
+    transform: scale(1);
+}
+
 #first .row .col-lg-4 div, #packages .row .col-lg-4 div {
     box-shadow: 0px 0px 28px #3b3b3b42;
     display: flex;
@@ -102,11 +115,11 @@ nav.fixed-top .bg-white .text-warning {
 }
 
 #first .row .col-lg-4:first-child > div{
-    border-top-left-radius: 20%;
+    border-top-left-radius: 65px;
 }
 
 #first .row .col-lg-4:last-child > div{
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 65px;
 }
 
 #services {
@@ -185,10 +198,12 @@ nav.fixed-top .bg-white .text-warning {
 }
 
 @media (max-width: 992px) {
+
     nav .logo {
+        width: 100px;
         position: relative;
-        width: unset;
-        height: 40px;
+        border-radius: 0;
+        height: unset;
     }
 
     .nav-link {
@@ -211,6 +226,10 @@ nav.fixed-top .bg-white .text-warning {
         padding-right: 15px !important;
         padding-left: 15px !important;
     }
+
+    nav.fixed-top .navbar-collapse * {
+        color: white !important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -224,17 +243,4 @@ nav.fixed-top .bg-white .text-warning {
         font-size: 12px;
     }
 
-    nav .logo {
-        width: 100px;
-        position: relative;
-        border-radius: 0;
-        height: unset;
-    }
-
-    nav.fixed-top .bg-white * {
-        color: white !important;
-    }
-    nav.fixed-top .bg-white .text-warning {
-        color: #ffc107!important;
-    }
 }
