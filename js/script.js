@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         $('nav .container-fluid').addClass('bg-white');
         $('nav .navbar-collapse').addClass('py-3');
-        // $('nav .container-fluid img').attr('src','img/logo.svg');
+        $('nav .container-fluid img').attr('src','img/logo.svg');
         $('nav .container-fluid img').addClass('scrolled-logo');
         // // add padding top to show content behind navbar
         // navbar_height = document.querySelector('.navbar').offsetHeight;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
         $('nav .container-fluid').removeClass('bg-white');
         $('nav .container-fluid img').removeClass('scrolled-logo');
         $('nav .navbar-collapse').removeClass('py-3');
-        // $('nav .container-fluid img').attr('src','img/logo.svg');
+        $('nav .container-fluid img').attr('src','img/logo-white.png');
         //  // remove padding top from body
         // document.body.style.paddingTop = '0';
       } 
