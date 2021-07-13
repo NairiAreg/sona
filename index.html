@@ -14,9 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
     <link rel="stylesheet" href="css/intlTelInput.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/social.css">
     <link rel="stylesheet" href="css/mainSlider.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Sona</title>
 </head>
 
@@ -63,7 +63,7 @@
                             <a class="nav-link" href="#contacts">Կապ</a>
                         </li>
                         <li class="nav-item bg-dark">
-                            <a class="nav-link btn btn-dark" href="tel:055547764">Զանգի պատվեր</a>
+                            <a id="callOrder" class="nav-link btn btn-dark" href="tel:055547764">Զանգի պատվեր</a>
                         </li>
                         <li class="nav-item dropdown d-none d-lg-block">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -143,7 +143,7 @@
     <section id="aboutUs">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-lg-6 ms-lg-5 ps-lg-5">
+                <div class="col-lg-6 ms-lg-3">
                     <h3>Who We Are</h3>
                     <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -162,7 +162,7 @@
             <div class="row">
                 <h3 class="text-end">Մեր Ծառայությունները</h3>
             </div>
-            <div class="justify-content-center row">
+            <div class="justify-content-between row">
                 <div class="align-items-center bg-white col-lg-3 col-md-4 d-flex flex-column justify-content-evenly">
                     <img src="img/diamond.png" alt="img">
                     <h4>Lorem Ipsum</h4>
@@ -212,7 +212,7 @@
     <section id="callback" class="m-0 position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 p-0 p-sm-5 mb-4 mb-sm-0">
+                <div class="col-lg-6 p-0 p-sm-4 mb-4 mb-sm-0">
                     <div class="w-100 p-5 d-flex flex-column justify-content-evenly align-items-center">
                         <h1 class="mb-5">Հետադարձ Կապ</h1>
                         <input type="text" placeholder="Անուն" class="form-control mb-3">
@@ -222,7 +222,7 @@
                         <button class="btn btn-dark mt-5 fw-bold px-4">Ուղարկել</button>
                     </div>
                 </div>
-                <div class="col-lg-6 p-0 p-sm-5">
+                <div class="col-lg-6 p-0 p-sm-4">
                     <div class="p-5 p-lg-4 p-xl-5 w-100">
                         <h2 class="mb-xl-5 text-end">Tell us about your project and let us tell you how to make it
                             happen</h2>
@@ -251,15 +251,20 @@
     </section>
 
     <section id="weLove" class="bg-dark text-white">
-        <h3 class="mb-5">Whe love what we do</h3>
-        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatem vitae expedita
-            delectus
-            deserunt nesciunt! Dolorem consectetur neque explicabo pariatur exercitationem reiciendis dignissimos quos
-            tempora, ab amet officiis eos facilis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus vero
-            ea
-            obcaecati tenetur, vitae dolor perferendis porro modi exercitationem a qui consectetur repellendus dolorum
-            magnam
-            aut earum similique minima hic.</p>
+        <div class="container">
+            <h3 class="mb-5">Whe love what we do</h3>
+            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatem vitae expedita
+                delectus
+                deserunt nesciunt! Dolorem consectetur neque explicabo pariatur exercitationem reiciendis dignissimos
+                quos
+                tempora, ab amet officiis eos facilis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+                vero
+                ea
+                obcaecati tenetur, vitae dolor perferendis porro modi exercitationem a qui consectetur repellendus
+                dolorum
+                magnam
+                aut earum similique minima hic.</p>
+        </div>
     </section>
 
     <section id="weCan">
@@ -467,11 +472,12 @@
     <section id="earth" class="w-100">
         <img class="w-100" src="img/earth.jpg" alt="earth">
     </section>
-    
+
     <footer id="contacts">
         <div class="container py-5">
             <div class="row">
-                <div class="align-items-center col-sm-4 d-flex justify-content-center justify-content-sm-start ps-0 ps-sm-5">
+                <div
+                    class="align-items-center col-sm-4 d-flex justify-content-center justify-content-sm-start ps-0 ps-sm-5">
                     <img class="w-25 w-40 w-50" src="img/logo.svg" alt="logo">
                 </div>
                 <div class="col-sm-4">
@@ -489,11 +495,16 @@
                     <h3 class="pb-4 text-center text-sm-start">Find Us</h3>
                     <div class="effect varrius">
                         <div class="buttons d-flex flex-wrap justify-content-center">
-                            <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                            <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>

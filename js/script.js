@@ -24,6 +24,11 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     arrows: false
   });
+
+
+  $(".navbar-light .navbar-toggler-icon").click(() => {
+    $(".navbar-light .navbar-toggler-icon").toggleClass('x-button');
+  })
 });
 
 
