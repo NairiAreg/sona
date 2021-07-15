@@ -304,4 +304,9 @@ button:focus:not(:focus-visible) {
         font-size: 12px;
     }
 
+    #services > div > div > div {
+        margin: 10px 0;
+        border-radius: 0;
+    }
+
 }
