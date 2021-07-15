@@ -15,7 +15,7 @@ header * {
 }
 
 section {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 button, a.btn {
@@ -44,8 +44,14 @@ button, a.btn {
 nav .logo {
     margin: 1.6% 5%;
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
+}
+
+.shadow-logo {
+    box-shadow: 0px 3px 20px 0px #00000047;
+    z-index: -1;
+    top: 20px;
 }
 
 nav.fixed-top > div {
@@ -68,8 +74,13 @@ button:focus:not(:focus-visible) {
     background: white;
     padding: 20px;
     border-radius: 50%;
+    
 }
 #callOrder:hover {
+    background-color: #ffbc00 !important;
+    color: black !important;
+}
+.btn-dark:hover {
     background-color: #ffbc00 !important;
     color: black !important;
 }
@@ -135,7 +146,6 @@ button:focus:not(:focus-visible) {
 
 #services > div > div > div {
     height: 350px;
-    border-radius: 30px;
     margin: 25px;
 }
 
@@ -190,6 +200,22 @@ button:focus:not(:focus-visible) {
     border-radius: 20px;
 }
 
+.btrr-30 {
+    border-top-right-radius: 30px;
+}
+
+.btlr-30 {
+    border-top-left-radius: 30px;
+}
+
+.bblr-30 {
+    border-bottom-left-radius: 30px;
+}
+
+.bbrr-30 {
+    border-bottom-right-radius: 30px;
+}
+
 #contacts {
     background-color: #747474;
 }
@@ -209,6 +235,7 @@ button:focus:not(:focus-visible) {
         position: relative;
         border-radius: 0;
         height: unset;
+        top: 0;
     }
 
     .nav-link {
@@ -219,18 +246,20 @@ button:focus:not(:focus-visible) {
     .mainText {
         width: unset;
     }
+
     #callback .col-lg-6 > div {
         height: auto;
     }
+
     section {
         padding-right: 15px !important;
         padding-left: 15px !important;
     }
 
-
     .navbar-collapse {
         background-color: #fff !important;
     }
+
     header .navbar-collapse * {
         color: black !important;
     }
@@ -240,6 +269,7 @@ button:focus:not(:focus-visible) {
         background-color: #ffbc00 !important;
         color: black !important;
     }
+
     #callOrder:hover {
         background-color: #212529 !important;
         color: white !important;
@@ -248,6 +278,7 @@ button:focus:not(:focus-visible) {
     #first .row .col-lg-4:first-child > div{
         border-top-right-radius: 65px;
     }
+
     #first .row .col-lg-4:last-child > div{
         border-bottom-left-radius: 65px;
     }
@@ -255,6 +286,11 @@ button:focus:not(:focus-visible) {
     .navbar-collapse ul li {
         width: fit-content;
     }
+
+    .shadow-logo {
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px) {
