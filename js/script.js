@@ -1,22 +1,23 @@
-var input = document.querySelector("#telephone");
-window.intlTelInput(input, ({
-  // options here
-  preferredCountries: ["am", "us", "ru"]
-}));
-
-// input.addEventListener("countrychange", function () {
-//     // do something with iti.getSelectedCountryData()
-// });
-
-// input.addEventListener("open:countrydropdown", function () {
-//     // triggered when the user opens the dropdown
-// });
-
-// input.addEventListener("close:countrydropdown", function () {
-//     // triggered when the user closes the dropdown
-// });
-
 $(document).ready(function () {
+
+  var input = document.querySelector("#telephone");
+  window.intlTelInput(input, ({
+    // options here
+    preferredCountries: ["am", "us", "ru"]
+  }));
+
+  // input.addEventListener("countrychange", function () {
+  //     // do something with iti.getSelectedCountryData()
+  // });
+
+  // input.addEventListener("open:countrydropdown", function () {
+  //     // triggered when the user opens the dropdown
+  // });
+
+  // input.addEventListener("close:countrydropdown", function () {
+  //     // triggered when the user closes the dropdown
+  // });
+
   $('.slick').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -29,10 +30,8 @@ $(document).ready(function () {
   $(".navbar-light .navbar-toggler").click(() => {
     $(".navbar-light .navbar-toggler-icon").toggleClass('x-button');
   })
-});
 
 
-document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('scroll', function () {
     if (window.scrollY > 550) {
       document.getElementById('navbar_top').classList.add('fixed-top');
@@ -54,43 +53,46 @@ document.addEventListener("DOMContentLoaded", function () {
       //  // remove padding top from body
       // document.body.style.paddingTop = '0';
     }
+
+    $.fn.isInViewport = function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+  
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+  
+      return elementBottom > viewportTop && elementTop +  240 < viewportBottom;
+  };
+
+    $(window).on('resize scroll', function () {
+      if ($('#aboutUs').isInViewport()) {
+        $(".nav-link").removeClass('underline');
+        $("a[href$='#aboutUs']").addClass('underline');
+      }
+      else if ($('#services').isInViewport()) {
+        $(".nav-link").removeClass('underline');
+        $("a[href$='#services']").addClass('underline');
+      }
+      else if ($('#partners').isInViewport()) {
+        $(".nav-link").removeClass('underline');
+        $("a[href$='#partners']").addClass('underline');
+      }
+      else if ($('#contacts').isInViewport()) {
+        $(".nav-link").removeClass('underline');
+        $("a[href$='#contacts']").addClass('underline');
+      }
+      else {
+        $(".nav-link").removeClass('underline');
+      }
+    });
   });
-});
-// DOMContentLoaded  end
+  // DOMContentLoaded  end
 
 
-// const small = window.matchMedia("(max-width: 1000px)"),
-// medium = window.matchMedia("(max-width: 1500px)");
-// if (small.matches)
-// {
-//   console.log('small');
-//   AOS.init({
-//     duration: 1000,
-//     anchorPlacement: 'top-center',
-//     offset: 500,
-//   });
-// } else if (medium.matches) 
-// {
-//   console.log('medium');
-//   AOS.init({  
-//     duration: 1000,
-//     anchorPlacement: 'top-center',
-//     offset: 1000,
-//   });
-// } else 
-// {
-//   console.log('big');
-//   AOS.init({
-//     duration: 1000,
-//     anchorPlacement: 'top-center',
-//     offset: 1000,
 
-//   });
-// }
-
-
-AOS.init({
-  duration: 1000,
-  offset: 500,
-  anchorPlacement: 'bottom-center'
+  AOS.init({
+    duration: 1000,
+    offset: 500,
+    anchorPlacement: 'bottom-center'
+  });
 });

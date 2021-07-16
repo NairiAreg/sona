@@ -18,11 +18,11 @@ section {
     padding-top: 150px;
 }
 
-button, a.btn {
+button,
+a.btn {
     border: none !important;
     font-weight: 700 !important;
 }
-
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("../img/3dots.png");
@@ -32,7 +32,6 @@ button, a.btn {
 .x-button {
     background-image: url("../img/x.png") !important;
 }
-
 
 .img-slider {
     overflow: hidden;
@@ -49,8 +48,11 @@ nav .logo {
     left: 0;
 }
 
+.shadows {
+    box-shadow: 0px 3px 20px 0px #00000047 !important;
+}
+
 .shadow-logo {
-    box-shadow: 0px 3px 20px 0px #00000047;
     z-index: -1;
     top: 20px;
 }
@@ -63,7 +65,7 @@ nav.fixed-top .bg-white * {
     color: black !important;
 }
 nav.fixed-top .bg-white .btn-dark {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 button:focus:not(:focus-visible) {
@@ -75,7 +77,6 @@ button:focus:not(:focus-visible) {
     background: white;
     padding: 20px;
     border-radius: 50%;
-    
 }
 #callOrder:hover {
     background-color: #ffbc00 !important;
@@ -105,14 +106,15 @@ button:focus:not(:focus-visible) {
 
 #first .row .col-lg-4 {
     transition: 0.6s;
-    transform: scale(0.95);
+    transform: perspective(1px) scale(0.95);
 }
 
 #first .row .col-lg-4:hover {
-    transform: scale(1);
+    transform: perspective(1px) scale(1);
 }
 
-#first .row .col-lg-4 div, #packages .row .col-lg-4 div {
+#first .row .col-lg-4 div,
+#packages .row .col-lg-4 div {
     box-shadow: 0px 0px 28px #3b3b3b42;
     display: flex;
     flex-direction: column;
@@ -123,7 +125,13 @@ button:focus:not(:focus-visible) {
 #first .row .col-lg-4 div > * {
     margin-bottom: 20px;
 }
-#first .row .col-lg-4, #packages .row .col-lg-4 {
+#first .row .col-lg-4 div > button {
+    transform: perspective(1px) scale(1) translateZ(0);
+    backface-visibility: hidden;
+}
+
+#first .row .col-lg-4,
+#packages .row .col-lg-4 {
     padding: 0 2%;
 }
 
@@ -131,11 +139,11 @@ button:focus:not(:focus-visible) {
     padding: 0 60px;
 }
 
-#first .row .col-lg-4:first-child > div{
+#first .row .col-lg-4:first-child > div {
     border-top-left-radius: 65px;
 }
 
-#first .row .col-lg-4:last-child > div{
+#first .row .col-lg-4:last-child > div {
     border-bottom-right-radius: 65px;
 }
 
@@ -184,6 +192,7 @@ button:focus:not(:focus-visible) {
 
 #weLove {
     padding: 5% 13%;
+    z-index: -1;
 }
 
 #weCan .col-sm-6 img {
@@ -221,8 +230,41 @@ button:focus:not(:focus-visible) {
     background-color: #747474;
 }
 
+.hive1 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 300px;
+}
 
+.hive2 {
+    z-index: -1;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    height: 80%;
+}
 
+@media (min-width: 1000px) {
+    .nav-link {
+        position: relative;
+    }
+    .nav-link:after {
+        background: none repeat scroll 0 0 black;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    .underline:after {
+        width: 100%;
+        left: 0;
+    }
+}
 @media (max-width: 1200px) {
     .nav-item {
         margin: 0;
@@ -230,7 +272,6 @@ button:focus:not(:focus-visible) {
 }
 
 @media (max-width: 992px) {
-
     nav .logo {
         width: 100px;
         position: relative;
@@ -276,11 +317,11 @@ button:focus:not(:focus-visible) {
         color: white !important;
     }
 
-    #first .row .col-lg-4:first-child > div{
+    #first .row .col-lg-4:first-child > div {
         border-top-right-radius: 65px;
     }
 
-    #first .row .col-lg-4:last-child > div{
+    #first .row .col-lg-4:last-child > div {
         border-bottom-left-radius: 65px;
     }
 
@@ -292,13 +333,13 @@ button:focus:not(:focus-visible) {
         display: none;
     }
 
+    #services > div > div > div {
+        margin: 10px 2px;
+        border-radius: 0;
+    }
 }
 
 @media (max-width: 768px) {
-    #services > div > div > div {
-        margin: 10px 0;
-        border-radius: 0;
-    }
 }
 
 @media (max-width: 600px) {
@@ -310,5 +351,15 @@ button:focus:not(:focus-visible) {
     }
     .mainText p {
         font-size: 12px;
+    }
+
+    #services > div > div > div:first-child {
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    #services > div > div > div:last-child {
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 }
