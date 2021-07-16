@@ -26,64 +26,71 @@ $(document).ready(function () {
   });
 
 
-  $(".navbar-light .navbar-toggler-icon").click(() => {
+  $(".navbar-light .navbar-toggler").click(() => {
     $(".navbar-light .navbar-toggler-icon").toggleClass('x-button');
   })
 });
 
 
-document.addEventListener("DOMContentLoaded", function(){
-  window.addEventListener('scroll', function() {
-      if (window.scrollY > 550) {
-        document.getElementById('navbar_top').classList.add('fixed-top');
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 550) {
+      document.getElementById('navbar_top').classList.add('fixed-top');
 
-        $('nav .container-fluid').addClass('bg-white');
-        $('nav .navbar-collapse').addClass('py-3');
-        $('nav .container-fluid img').attr('src','img/logo.svg');
-        $('nav .container-fluid img').addClass('scrolled-logo');
-        // // add padding top to show content behind navbar
-        // navbar_height = document.querySelector('.navbar').offsetHeight;
-        // document.body.style.paddingTop = navbar_height + 'px';
-      } else {
-        document.getElementById('navbar_top').classList.remove('fixed-top');
-        
-        $('nav .container-fluid').removeClass('bg-white');
-        $('nav .container-fluid img').removeClass('scrolled-logo');
-        $('nav .navbar-collapse').removeClass('py-3');
-        $('nav .container-fluid img').attr('src','img/logo-white.png');
-        //  // remove padding top from body
-        // document.body.style.paddingTop = '0';
-      } 
+      $('nav .container-fluid').addClass('bg-white');
+      $('nav .navbar-collapse').addClass('py-3');
+      $('nav .container-fluid img').attr('src', 'img/logo.svg');
+      $('nav .container-fluid img').addClass('scrolled-logo');
+      // // add padding top to show content behind navbar
+      // navbar_height = document.querySelector('.navbar').offsetHeight;
+      // document.body.style.paddingTop = navbar_height + 'px';
+    } else {
+      document.getElementById('navbar_top').classList.remove('fixed-top');
+
+      $('nav .container-fluid').removeClass('bg-white');
+      $('nav .container-fluid img').removeClass('scrolled-logo');
+      $('nav .navbar-collapse').removeClass('py-3');
+      $('nav .container-fluid img').attr('src', 'img/logo-white.png');
+      //  // remove padding top from body
+      // document.body.style.paddingTop = '0';
+    }
   });
-}); 
+});
 // DOMContentLoaded  end
 
 
-const small = window.matchMedia("(max-width: 1000px)"),
-medium = window.matchMedia("(max-width: 1500px)");
-if (small.matches)
-{
-  console.log('small');
-  AOS.init({
-    duration: 1000,
-    anchorPlacement: 'top-center',
-    offset: 500,
-  });
-} else if (medium.matches) 
-{
-  console.log('medium');
-  AOS.init({
-    duration: 1000,
-    anchorPlacement: 'top-center',
-    offset: 1000,
-  });
-} else 
-{
-  console.log('big');
-  AOS.init({
-    duration: 1300,
-    anchorPlacement: 'top-center',
-    offset: 1300,
-  
-  });
-}
+// const small = window.matchMedia("(max-width: 1000px)"),
+// medium = window.matchMedia("(max-width: 1500px)");
+// if (small.matches)
+// {
+//   console.log('small');
+//   AOS.init({
+//     duration: 1000,
+//     anchorPlacement: 'top-center',
+//     offset: 500,
+//   });
+// } else if (medium.matches) 
+// {
+//   console.log('medium');
+//   AOS.init({  
+//     duration: 1000,
+//     anchorPlacement: 'top-center',
+//     offset: 1000,
+//   });
+// } else 
+// {
+//   console.log('big');
+//   AOS.init({
+//     duration: 1000,
+//     anchorPlacement: 'top-center',
+//     offset: 1000,
+
+//   });
+// }
+
+
+AOS.init({
+  duration: 1000,
+  offset: 500,
+  anchorPlacement: 'bottom-center'
+});
