@@ -95,4 +95,13 @@ $(document).ready(function () {
     offset: 500,
     anchorPlacement: 'bottom-center'
   });
+
+
+
+
+  $("#centerOfHive").hover(function(){
+    $('.hexs').addClass("hexs-hover");
+    }, function(){
+    $('.hexs').removeClass("hexs-hover");
+  });
 });
