@@ -1,10 +1,12 @@
 $(document).ready(function () {
 
+  //! LATER
   var input = document.querySelector("#telephone");
   window.intlTelInput(input, ({
     // options here
     preferredCountries: ["am", "us", "ru"]
   }));
+  //! 
 
   // input.addEventListener("countrychange", function () {
   //     // do something with iti.getSelectedCountryData()
@@ -18,12 +20,22 @@ $(document).ready(function () {
   //     // triggered when the user closes the dropdown
   // });
 
-  $('.slick').slick({
+  $('.slick1').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: true
+  });
+
+  $('.slick2').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false
+    arrows: true,
+    dots: false
   });
 
 
@@ -105,3 +117,29 @@ $(document).ready(function () {
     $('.hexs').removeClass("hexs-hover");
   });
 });
+
+
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        } else {
+          $('#msgModal').modal('hide');
+          $('#successModal').modal('show');
+        }
+
+        form.classList.add('was-validated')
+
+
+      }, false)
+    })
+})()

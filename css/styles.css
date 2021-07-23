@@ -44,7 +44,7 @@ a.btn {
 nav .logo {
     margin: 1.6% 5%;
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
 }
 
@@ -57,8 +57,25 @@ nav .logo {
     top: 20px;
 }
 
+.floating {
+    top: 300px;
+    right: 10px;
+    width: 60px;
+    z-index: 9999;
+}
+
+.modal-content {
+    border: none;
+}
+
+.floating > div {
+    cursor: pointer;
+}
+
 nav.fixed-top > div {
     box-shadow: 0px 3px 20px 0px #00000047;
+    height: 60px;
+    top: 0;
 }
 
 nav.fixed-top .bg-white * {
@@ -161,19 +178,24 @@ button:focus:not(:focus-visible) {
     transform: skewY(11deg);
 }
 
+#services > div > div > h3 {
+    margin-bottom: 100px;
+}
+
 .hexs {
     min-height: 353px;
 }
 
 .hexs .col-md-3 {
-    margin: 0;    
+    margin: 0;
 }
 
-.hexs,.hexs .col-md-3 {
+.hexs,
+.hexs .col-md-3 {
     transition: 1s;
 }
 .hexs-hover .col-md-3 {
-    margin: -13px;    
+    margin: -13px;
 }
 
 .hexs-hover.m-100-neg {
@@ -182,6 +204,10 @@ button:focus:not(:focus-visible) {
 
 .hexs img.position-absolute {
     z-index: -1;
+}
+
+.hexs h3 {
+    font-size: 20px;
 }
 
 .hexs img:not(.w-100.h-100.position-absolute) {
@@ -193,8 +219,6 @@ button:focus:not(:focus-visible) {
     width: 150px;
 }
 
-
-
 #services .text-end {
     position: relative;
     top: -100px;
@@ -202,7 +226,7 @@ button:focus:not(:focus-visible) {
 }
 
 #callback {
-    top: -100px;
+    /* top: -100px; */
 }
 
 #callback .col-lg-6:first-child > div {
@@ -236,7 +260,7 @@ button:focus:not(:focus-visible) {
 }
 
 #packages {
-    background-color: #ffbc00;
+    /* background-color: #ffbc00; */
 }
 
 .border-radius-20 {
@@ -275,6 +299,10 @@ button:focus:not(:focus-visible) {
     border-bottom-right-radius: 65px;
 }
 
+.br-10 {
+    border-radius: 10px;
+}
+
 #contacts {
     background-color: #747474;
 }
@@ -294,16 +322,206 @@ button:focus:not(:focus-visible) {
     height: 80%;
 }
 
+/* //! Our Works Hovers */
 
+#ourWorks div a,
+#ourWorks div a > span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+}
+#ourWorks div a:before,
+#ourWorks div a:after,
+a > span:before,
+#ourWorks div a > span:after {
+    content: "";
+    position: absolute;
+    transition: transform 0.5s ease;
+}
 
+#ourWorks div a {
+    display: inline-block;
+    overflow: hidden;
+}
+#ourWorks div a:before,
+#ourWorks div a:after {
+    right: 0;
+    bottom: 0;
+    background: #492059;
+}
+#ourWorks div a:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+#ourWorks div a:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+#ourWorks div a > span {
+    display: flex;
+    padding: 10px;
+}
+#ourWorks div a > span:before,
+#ourWorks div a > span:after {
+    left: 0;
+    top: 0;
+    background: #492059;
+}
+#ourWorks div a > span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+#ourWorks div a > span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+#ourWorks div a:hover:before,
+#ourWorks div a:hover:after,
+#ourWorks div a:hover > span:before,
+#ourWorks div a:hover > span:after {
+    transform: translate(0, 0);
+}
 
+/* //! Our Works Hovers */
 
+/* //! Brandings Hovers */
 
+#brandings div.mb-4 .title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
 
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
 
+.content:hover .content-overlay {
+    opacity: 1;
+}
 
+.content-image {
+    width: 100%;
+}
 
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+/* //! Brandings Hovers */
+
+/* //! Social Media Profil Card Hovers */
+
+.icon-container {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.icon-container a {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition-property: all 150ms ease-in-out;
+    -o-transition-property: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.icon-container a,
+.icon-container a:hover,
+.icon-container a:active {
+    text-decoration: none;
+}
+
+.social-media-pc .icon-container {
+    font-size: 20px;
+}
+.social-media-pc .icon-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 30px;
+}
+.icon-container a {
+    color: #2e3436;
+}
+
+.social-media-pc #facebook-link:hover,
+.social-media-pc #facebook-link:active {
+    color: #3b5998;
+}
+.social-media-pc #google-plus-link:hover,
+.social-media-pc #google-plus-link:active {
+    color: #d34836;
+}
+.social-media-pc #twitter-link:hover,
+.social-media-pc #twitter-link:active {
+    color: #55acee;
+}
+.social-media-pc #linkedin-link:hover,
+.social-media-pc #linkedin-link:active {
+    color: #0077b5;
+}
+
+/* //! Social Media Profil Card Hovers */
 
 @media (max-width: 1400px) {
     .hexs {
@@ -317,10 +535,10 @@ button:focus:not(:focus-visible) {
     .hexs img:not(.w-100.h-100.position-absolute) {
         width: 50px;
     }
-    
-    .hexs h3 {
+
+    /* .hexs h3 {
         font-size: 22px;
-    }
+    } */
 
     .hexs button {
         font-size: 14px;
@@ -362,10 +580,10 @@ button:focus:not(:focus-visible) {
     .hexs img:not(.w-100.h-100.position-absolute) {
         width: 40px;
     }
-    
-    .hexs h3 {
+
+    /* .hexs h3 {
         font-size: 18px;
-    }
+    } */
 
     .hexs button {
         font-size: 13px;
@@ -374,11 +592,11 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 992px) {
     nav .logo {
-        width: 100px;
         position: relative;
         border-radius: 0;
-        height: unset;
-        top: 0;
+        padding: 5px;
+        width: 51px !important;
+        top: -10px !important;
     }
 
     .nav-link {
