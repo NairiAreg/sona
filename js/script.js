@@ -26,7 +26,27 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('.slick2').slick({
@@ -35,7 +55,27 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
-    dots: false
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
 
@@ -43,6 +83,14 @@ $(document).ready(function () {
     $(".navbar-light .navbar-toggler-icon").toggleClass('x-button');
   })
 
+
+  // $(".flip-card").click(() => {
+  //   $(this).find(".flip-card-inner").toggleClass('rot-y-180');
+  // })
+
+  $(".flip-card").on("click", function () {
+    $(this).find(".flip-card-inner").toggleClass('rot-y-180');
+  });
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 550) {
@@ -66,15 +114,15 @@ $(document).ready(function () {
       // document.body.style.paddingTop = '0';
     }
 
-    $.fn.isInViewport = function() {
+    $.fn.isInViewport = function () {
       var elementTop = $(this).offset().top;
       var elementBottom = elementTop + $(this).outerHeight();
-  
+
       var viewportTop = $(window).scrollTop();
       var viewportBottom = viewportTop + $(window).height();
-  
-      return elementBottom > viewportTop && elementTop +  240 < viewportBottom;
-  };
+
+      return elementBottom > viewportTop && elementTop + 240 < viewportBottom;
+    };
 
     $(window).on('resize scroll', function () {
       if ($('#aboutUs').isInViewport()) {
@@ -85,9 +133,9 @@ $(document).ready(function () {
         $(".nav-link").removeClass('underline');
         $("a[href$='#services']").addClass('underline');
       }
-      else if ($('#partners').isInViewport()) {
+      else if ($('#ourWorks').isInViewport()) {
         $(".nav-link").removeClass('underline');
-        $("a[href$='#partners']").addClass('underline');
+        $("a[href$='#ourWorks']").addClass('underline');
       }
       else if ($('#contacts').isInViewport()) {
         $(".nav-link").removeClass('underline');
@@ -111,11 +159,19 @@ $(document).ready(function () {
 
 
 
-  $("#centerOfHive").hover(function(){
+  $("#centerOfHive").hover(function () {
     $('.hexs').addClass("hexs-hover");
-    }, function(){
+  }, function () {
     $('.hexs').removeClass("hexs-hover");
   });
+
+  $("div > .customArrow:nth-child(2)").click(function () {
+    $('.slick-next').click();
+  });
+  $("div > .customArrow:nth-child(1)").click(function () {
+    $('.slick-prev').click();
+  });
+
 });
 
 
@@ -142,4 +198,38 @@ $(document).ready(function () {
 
       }, false)
     })
+
+  //   let selector = '.lightSlider li:not(".clone") a';
+  // // selector = '#lightSliderVertical li:not(".clone") a';
+  // $().fancybox({
+  //   selector: selector,
+  //   backFocus: false,
+  //   buttons: [
+  //     'slideShow',
+  //     'share',
+  //     'zoom',
+  //     'fullScreen',
+  //     'thumbs',
+  //     'download',
+  //     'close'
+  //   ]
+  // });
 })()
+
+$('.slider-modal').on('shown.bs.modal', function () {
+
+  if (!$(this).hasClass('alreadyLight')) {
+
+    $(this).find(".lightSlider").lightSlider({
+      gallery: true,
+      item: 1,
+      loop: true,
+      slideMargin: 0,
+      thumbItem: 9
+    });
+
+  }
+
+  $(this).addClass("alreadyLight");
+
+});

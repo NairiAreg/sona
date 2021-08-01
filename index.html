@@ -15,6 +15,10 @@
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
 
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+
+
     <link rel="stylesheet" href="css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/social.css">
     <link rel="stylesheet" href="css/mainSlider.css">
@@ -44,14 +48,14 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="msgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade right" id="msgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="align-items-center d-flex modal-dialog">
             <div class="bg-transparent d-flex justify-content-center modal-content">
                 <img src="img/white-hex.png" class="position-absolute w-100">
                 <form id="callback"
-                    class="needs-validation align-items-center d-flex flex-column modal-body p-5 position-relative"
+                    class="needs-validation align-items-center d-flex flex-column modal-body position-relative"
                     novalidate>
-                    <h1 class="mb-5">Հետադարձ Կապ</h1>
+                    <h1 class="mb-3">Հետադարձ Կապ</h1>
                     <input type="text" placeholder="Անուն" class="form-control mb-3" required>
                     <div class="invalid-feedback">
                         Required name.
@@ -60,15 +64,15 @@
                     <div class="invalid-feedback">
                         Required phone number.
                     </div>
-                    <textarea name="message" id="message" cols="30" rows="1" class="form-control mt-3"
+                    <textarea name="message" id="message" cols="30" rows="2" class="form-control mt-3"
                         placeholder="Հաղորդագրություն"></textarea>
-                    <button type="submit" class="btn btn-dark mt-5 fw-bold px-4">Ուղարկել</button>
+                    <button type="submit" class="btn btn-dark mt-3 fw-bold px-4">Ուղարկել</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="floating position-fixed d-flex flex-column">
-        <div class="floating-icon d-flex justify-content-center align-items-center mb-2" type="button"
+    <div class="d-flex flex-column floating me-4 position-fixed">
+        <div class="floating-icon d-flex justify-content-center align-items-center mb-3" type="button"
             data-bs-toggle="modal" data-bs-target="#msgModal">
             <img src="img/black-hex.png" alt="hex" class="w-100">
             <img src="img/msg.png" alt="msg" class="position-absolute w-50">
@@ -115,7 +119,7 @@
                             <a class="nav-link nav-link-underline" href="#services">Ծառայություններ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-underline" href="#partners">Պորտֆոլիո</a>
+                            <a class="nav-link nav-link-underline" href="#ourWorks">Պորտֆոլիո</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-underline" href="#contacts">Կապ</a>
@@ -218,7 +222,7 @@
             <div class="row px-lg-5">
                 <h3 class="text-center text-white">Մեր Ծառայությունները</h3>
             </div>
-            <div class="justify-content-between row px-lg-5 d-lg-none">
+            <!-- <div class="justify-content-between row px-lg-5 d-lg-none">
                 <div data-aos="zoom-in-up"
                     class="align-items-center bg-white col-lg-3 col-md-4 d-flex flex-column justify-content-evenly btlr-30">
                     <img src="img/icon2.png" alt="img">
@@ -267,36 +271,84 @@
                         Ipsum has been the industry's .</p>
                     <button class="btn btn-dark px-5">Read More</button>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="row justify-content-center hexs d-none d-lg-flex">
+            <div class="row justify-content-center hexs d-lg-flex">
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon2.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԴԻԶԱՅՆ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon2.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԴԻԶԱՅՆ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon1.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԲՐԵՆԴԻՆԳ ԵՎ <br> ՌԵԲՐԵՆԴԻՆԳ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon1.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԲՐԵՆԴԻՆԳ ԵՎ <br> ՌԵԲՐԵՆԴԻՆԳ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center m-100-neg hexs d-none d-lg-flex">
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon3.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԿԱՅՔԵՐԻ <br> ՊԱՏՐԱՍՏՈՒՄ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon3.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ԿԱՅՔԵՐԻ <br> ՊԱՏՐԱՍՏՈՒՄ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -307,32 +359,80 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon4.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՖՈՏՈ ԵՎ ՎԻԴԵՈ <br> ՆԿԱՐԱՀԱՆՈՒՄ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon4.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՖՈՏՈ ԵՎ ՎԻԴԵՈ <br> ՆԿԱՐԱՀԱՆՈՒՄ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center hexs d-none d-lg-flex">
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon5.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՏՊԱԳՐՈՒԹՅՈՒՆ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon5.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՏՊԱԳՐՈՒԹՅՈՒՆ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
-                        <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
-                        <img src="img/icon6.png" alt="img">
-                        <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՍՈՑ ԿԱՅՔԵՐԻ ԹԻՐԱԽԱՎՈՐՈՒՄ</h3>
-                        <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <img src="img/icon6.png" alt="img">
+                                    <h3 class="my-3 my-xl-4 my-xxl-5 text-center">ՍՈՑ ԿԱՅՔԵՐԻ ԹԻՐԱԽԱՎՈՐՈՒՄ</h3>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center position-relative h-100 w-100">
+                                    <img src="img/white-hex.png" alt="img" class="w-100 h-100 position-absolute">
+                                    <h6 class="my-3 px-lg-4 my-xl-4 my-xxl-5 text-center">Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit. Ratione corporis minus eligendi, maxime magni
+                                        </h6>
+                                    <!-- <button class="btn btn-dark ">Կարդալ ավելին</button> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,204 +603,331 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-2 text-center">
-                    <a href="#" class="text-dark fw-bold text-decoration-none">
+                    <a href="./index2.html?filter=branding-tog" class="text-dark fw-bold text-decoration-none">
+                        <span>
+                            Brand
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="./index2.html?filter=graphic-tog" class="text-dark fw-bold text-decoration-none">
+                        <span>
+                            Graphic
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="./index2.html?filter=web-tog" class="text-dark fw-bold text-decoration-none">
                         <span>
                             Web
                         </span>
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
-                    <a href="#" class="text-dark fw-bold text-decoration-none">
+                    <a href="./index2.html?filter=photo-tog" class="text-dark fw-bold text-decoration-none">
                         <span>
-                            Web
+                            Photo
                         </span>
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
-                    <a href="#" class="text-dark fw-bold text-decoration-none">
+                    <a href="./index2.html?filter=video-tog" class="text-dark fw-bold text-decoration-none">
                         <span>
-                            Web
-                        </span>
-                    </a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a href="#" class="text-dark fw-bold text-decoration-none">
-                        <span>
-                            Web
-                        </span>
-                    </a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a href="#" class="text-dark fw-bold text-decoration-none">
-                        <span>
-                            Web
+                            Video
                         </span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="modal fade" id="branding1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 1</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="branding2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 2</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="branding3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 3</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="branding4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 4</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="branding5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 5</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="branding6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Branding 6</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <section id="brandings">
         <div class="container">
             <div class="row justify-content-center">
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding1">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/Branding.gif">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">Branding 1</h3>
+                                <h3 class="content-title">Branding</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
+                <div class="modal fade" id="branding1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/1500/2000" alt="img" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding2">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/Graphic.png">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">This is a title</h3>
+                                <h3 class="content-title">Graphic</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
+
+                <div class="modal fade" id="branding2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding 2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding3">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/Web.png">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">This is a title</h3>
+                                <h3 class="content-title">Web</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
+
+                <div class="modal fade" id="branding3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding 3</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/500/2000" alt="img" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding4">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/photo.png">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">This is a title</h3>
+                                <h3 class="content-title">Photo</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
+
+                <div class="modal fade slider-modal" id="branding4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding 4</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="demo">
+                                    <ul class="lightSlider">
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding5">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/photo.png">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">This is a title</h3>
+                                <h3 class="content-title">Photo</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
+
+                <div class="modal fade slider-modal" id="branding5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding 5</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="demo">
+                                    <ul class="lightSlider">
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="content">
+                    <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding6">
                             <div class="content-overlay"></div>
-                            <img class="content-image" src="https://picsum.photos/500/500">
+                            <img class="content-image" src="./img/demo/Video.png">
                             <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">This is a title</h3>
+                                <h3 class="content-title">Video</h3>
                                 <p class="content-text">This is a short description</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <button class="btn btn-dark w-auto mt-5">Տեսնել ավելին</button>
+
+                <div class="modal fade slider-modal" id="branding6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Branding 6</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="demo">
+                                    <ul class="lightSlider">
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+                                        </li>
+                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
+                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./index2.html" class="btn btn-dark w-auto mt-5">Տեսնել ավելին</a>
             </div>
         </div>
     </section>
@@ -708,14 +935,14 @@
     <section id="partners">
         <div class="container px-lg-5">
             <h1 class="text-center mb-5">
-                Մեր գործընկերները
+                Մեր Թիմը
             </h1>
             <div class="slick1">
 
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -736,9 +963,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -759,9 +986,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -782,9 +1009,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -805,9 +1032,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -828,9 +1055,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -851,9 +1078,9 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <div class="d-flex flex-column btrr-30 btlr-30 bbrr-30 bblr-30 bg-white shadows p-3">
+                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
                         <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4>Շողեր Հակոբյան</h4>
+                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
                         <span>UX\UI Designer</span>
                         <div class="row social-media-pc">
                             <div class="d-flex icon-container p-0 pb-3">
@@ -878,56 +1105,53 @@
     </section>
 
     <section id="partners">
-        <div class="container px-lg-5">
-            <h1 class="text-center mb-5">
-                Մենք համագործակցում ենք
-            </h1>
-            <div class="slick2" class='px-2'>
-                <div>
-                    <img class="w-100" src="img/chart_print.png"
-                        alt="img">
+        <div class="bg-dark-2 py-5">
+            <div class="container px-lg-5">
+                <h1 class="text-center mb-5">
+                    Մենք համագործակցում ենք
+                </h1>
+
+                <div class='px-2 d-flex slick2'>
+                    <div>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
+                    <div class='px-2'>
+                        <img class="w-100" src="img/chart_print.png" alt="img">
+                    </div>
                 </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
-                </div class='px-2'>
-                <div>
-                    <img class="w-100" src="img/chart_print.png"
-                        alt="img">
-                </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
-                </div class='px-2'>
-                <div>
-                    <img class="w-100" src="img/chart_print.png"
-                        alt="img">
-                </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
-                </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
-                </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
-                </div class='px-2'>
-                <div>
-                    <img class="w-100" src="img/chart_print.png"
-                        alt="img">
-                </div>
-                <div class='px-2'>
-                    <img class="w-100"
-                        src="img/chart_print.png"
-                        alt="img">
+                <div class="d-flex justify-content-center align-items-end">
+                    <div class="position-absolute d-flex">
+                        <div class="customArrow d-flex justify-content-center align-items-center me-3">
+                            &#10094;
+                        </div>
+                        <div class="customArrow d-flex justify-content-center align-items-center">
+                            &#10095;
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -974,9 +1198,16 @@
         </div>
     </footer>
 
+        <!-- //! Slider -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+        <!-- <script src="./js/function.js"></script> -->
+        <!-- //! Slider -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
     <script src="js/intlTelInput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
