@@ -5,3 +5,6 @@
     width: 51px !important;
     top: -5px !important;
 }
+#brandings {
+    min-height: 50vh;
+}

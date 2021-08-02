@@ -89,7 +89,18 @@ $(document).ready(function () {
   // })
 
   $(".flip-card").on("click", function () {
-    $(this).find(".flip-card-inner").toggleClass('rot-y-180');
+
+    if ($(this).find(".flip-card-inner").hasClass('rot-y-180')) {
+
+      $(".flip-card-inner").removeClass("rot-y-180");
+
+    } else {
+
+      $(".flip-card-inner").removeClass("rot-y-180");
+      $(this).find(".flip-card-inner").addClass('rot-y-180')
+
+    }
+
   });
 
   window.addEventListener('scroll', function () {
@@ -225,7 +236,8 @@ $('.slider-modal').on('shown.bs.modal', function () {
       item: 1,
       loop: true,
       slideMargin: 0,
-      thumbItem: 9
+      thumbItem: 5,
+      autoWidth: true
     });
 
   }

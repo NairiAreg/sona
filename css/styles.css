@@ -20,6 +20,8 @@ header * {
 
 section {
     padding-top: 150px;
+    position: relative;
+    z-index: 1;
 }
 
 button,
@@ -68,7 +70,7 @@ nav .logo {
     bottom: 10%;
     right: 10px;
     width: 60px;
-    z-index: 9999;
+    z-index: 5;
 }
 
 .modal-content {
@@ -99,8 +101,8 @@ button:focus:not(:focus-visible) {
 .scrolled-logo {
     margin-top: 0px !important;
     background: white;
-    padding: 20px;
-    border-radius: 50%;
+    position: relative !important;
+    height: 100%;
 }
 #callOrder:hover {
     background-color: #ffbc00 !important;
@@ -172,7 +174,7 @@ button:focus:not(:focus-visible) {
 }
 
 #services {
-    padding: 200px 0 400px;
+    padding: 100px 0;
     background-color: #ffbc00;
     transform: skewY(-11deg);
 }
@@ -200,13 +202,25 @@ button:focus:not(:focus-visible) {
 .hexs,
 .hexs .col-md-3 {
     transition: 1s;
+    position: relative;
+    left: 0;
 }
-.hexs-hover .col-md-3 {
-    margin: -13px;
+
+.hexs-hover .col-md-3:first-child {
+    left: 12.5px;
+}
+.hexs-hover .col-md-3:last-child {
+    left: -12.5px;
+}
+.hexs-hover.m-100-neg .col-md-3:first-child {
+    left: 25px;
+}
+.hexs-hover.m-100-neg .col-md-3:last-child {
+    left: -25px;
 }
 
 .hexs-hover.m-100-neg {
-    margin: -72px 0;
+    margin: -91px 0;
 }
 
 .hexs img.position-absolute {
@@ -312,6 +326,8 @@ button:focus:not(:focus-visible) {
 
 #contacts {
     background-color: #747474;
+    position: relative;
+    z-index: 999;
 }
 
 .hive1 {
@@ -404,6 +420,10 @@ a > span:before,
 /* //! Our Works Hovers */
 
 /* //! Brandings Hovers */
+
+#brandings {
+    padding-top: 50px;
+}
 
 #brandings div.mb-4 .title {
     color: #1a1a1a;
@@ -503,6 +523,11 @@ a > span:before,
     text-decoration: none;
 }
 
+.social-media-pc {
+    position: relative;
+    left: -5px;
+}
+
 .social-media-pc .icon-container {
     font-size: 20px;
 }
@@ -522,14 +547,7 @@ a > span:before,
 .social-media-pc #facebook-link:active {
     color: #3b5998;
 }
-.social-media-pc #google-plus-link:hover,
-.social-media-pc #google-plus-link:active {
-    color: #d34836;
-}
-.social-media-pc #twitter-link:hover,
-.social-media-pc #twitter-link:active {
-    color: #55acee;
-}
+
 .social-media-pc #linkedin-link:hover,
 .social-media-pc #linkedin-link:active {
     color: #0077b5;
@@ -550,12 +568,19 @@ a > span:before,
     display: none;
 }
 
+#partners {
+    padding-top: 179px;
+}
+
+#partners > .bg-dark-2 {
+    padding-top: 100px !important;
+}
+
 #partners .container.px-lg-5:last-child {
     margin-top: -2%;
 }
 
 /* //! Modal right popup */
-
 
 .modal.right .modal-dialog {
     position: fixed;
@@ -586,50 +611,50 @@ a > span:before,
 
 /* //! Modal right popup */
 
-
 /* //! Flip card */
-
 
 .flip-card {
     background-color: transparent;
     width: 100%;
     height: 100%;
     perspective: 1000px;
-  }
-  
-  .flip-card-inner {
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-  }
-  
-  .rot-y-180 {
+}
+
+.rot-y-180 {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
 
-  .flip-card-back {
+.flip-card-back {
     color: black;
     transform: rotateY(180deg);
-  }
+}
 
 /* //! Flip card */
-
-
 
 /* //! Flip card */
 
 .mw-90 {
     max-width: 90%;
+}
+.mw-50 {
+    max-width: 50% !important;
 }
 
 /* //! Flip card */
@@ -642,18 +667,22 @@ a > span:before,
 .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
+    cursor: pointer;
 }
 .demo img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
+}
+
+.w-40 {
+    width: 40%;
 }
 
 /* //! Slider */

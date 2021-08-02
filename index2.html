@@ -56,7 +56,7 @@
                 <form id="callback"
                     class="needs-validation align-items-center d-flex flex-column modal-body position-relative"
                     novalidate>
-                    <h1 class="mb-3">Հետադարձ Կապ</h1>
+                    <h3 class="mb-3">Հետադարձ Կապ</h3>
                     <input type="text" placeholder="Անուն" class="form-control mb-3" required>
                     <div class="invalid-feedback">
                         Required name.
@@ -84,11 +84,10 @@
         </div>
     </div>
     <header class="position-relative">
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light p-0">
-            <div class="container-fluid pt-2 position-absolute top-0 bg-dark">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light p-0 fixed-top">
+            <div class="container-fluid pt-2 position-absolute top-0 bg-white">
                 <a class="navbar-brand h-100" href="#">
-                    <img src="img/logo-white.png" alt="logo" class="logo logo2">
-                    <img src="img/logo-white.png" alt="logo" class="logo logo2 shadow-logo shadows d-none">
+                    <img src="img/logo.svg" alt="logo" class="logo scrolled-logo">
                 </a>
                 <div class="d-flex">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -111,19 +110,19 @@
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Գլխավոր</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Գլխավոր</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-underline" href="#aboutUs">Մեր մասին</a>
+                            <a class="nav-link nav-link-underline" href="./index.html#aboutUs">Մեր մասին</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-underline" href="#services">Ծառայություններ</a>
+                            <a class="nav-link nav-link-underline" href="./index.html#services">Ծառայություններ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-underline" href="#ourWorks">Պորտֆոլիո</a>
+                            <a class="nav-link nav-link-underline" href="./index.html#ourWorks">Պորտֆոլիո</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-underline" href="#contacts">Կապ</a>
+                            <a class="nav-link nav-link-underline" href="./index.html#contacts">Կապ</a>
                         </li>
                         <!-- <li class="nav-item bg-dark">
                             <a id="callOrder" class="nav-link btn btn-dark" href="tel:055547764">Պատվիրել Զանգ</a>
@@ -199,10 +198,10 @@
     </section>
 
     <section id="brandings">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding1">
                             <div class="content-overlay"></div>
@@ -231,7 +230,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding2">
                             <div class="content-overlay"></div>
@@ -261,7 +260,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding3">
                             <div class="content-overlay"></div>
@@ -291,7 +290,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding4">
                             <div class="content-overlay"></div>
@@ -306,7 +305,7 @@
 
                 <div class="modal fade slider-modal" id="branding4" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mw-50">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Branding 4</h5>
@@ -316,8 +315,8 @@
                             <div class="modal-body">
                                 <div class="demo">
                                     <ul class="lightSlider">
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                        <li data-thumb="https://picsum.photos/1000/1000">
+                                            <img src="https://picsum.photos/1000/1000" />
                                         </li>
                                         <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
                                             <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
@@ -363,7 +362,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding5">
                             <div class="content-overlay"></div>
@@ -435,7 +434,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding6">
                             <div class="content-overlay"></div>
@@ -506,7 +505,7 @@
                     </div>
                 </div>
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding7">
                             <div class="content-overlay"></div>
@@ -535,7 +534,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding8">
                             <div class="content-overlay"></div>
@@ -565,7 +564,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding9">
                             <div class="content-overlay"></div>
@@ -595,7 +594,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding10">
                             <div class="content-overlay"></div>
@@ -667,7 +666,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding11">
                             <div class="content-overlay"></div>
@@ -739,7 +738,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding12">
                             <div class="content-overlay"></div>
@@ -810,7 +809,7 @@
                     </div>
                 </div>
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding13">
                             <div class="content-overlay"></div>
@@ -839,7 +838,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding14">
                             <div class="content-overlay"></div>
@@ -869,7 +868,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding15">
                             <div class="content-overlay"></div>
@@ -899,7 +898,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding16">
                             <div class="content-overlay"></div>
@@ -971,7 +970,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding17">
                             <div class="content-overlay"></div>
@@ -1043,7 +1042,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding18">
                             <div class="content-overlay"></div>
@@ -1114,7 +1113,7 @@
                     </div>
                 </div>
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 branding-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding19">
                             <div class="content-overlay"></div>
@@ -1143,7 +1142,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 graphic-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding20">
                             <div class="content-overlay"></div>
@@ -1173,7 +1172,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 web-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding21">
                             <div class="content-overlay"></div>
@@ -1203,7 +1202,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding22">
                             <div class="content-overlay"></div>
@@ -1275,7 +1274,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 photo-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding23">
                             <div class="content-overlay"></div>
@@ -1347,7 +1346,7 @@
                 </div>
 
 
-                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4 video-tog">
                     <div class="content br-10 shadows">
                         <a type='button' data-bs-toggle="modal" data-bs-target="#branding24">
                             <div class="content-overlay"></div>
@@ -1421,235 +1420,7 @@
         </div>
     </section>
 
-    <section id="partners">
-        <div class="container px-lg-5">
-            <h1 class="text-center mb-5">
-                Մեր Թիմը
-            </h1>
-            <div class="slick1">
-
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3">
-                    <div class="d-flex flex-column br-10 bg-white shadows p-3">
-                        <img class="w-100 br-10" src="https://picsum.photos/500/500" alt="img">
-                        <h4 class="mt-3">Շողեր Հակոբյան</h4>
-                        <span>UX\UI Designer</span>
-                        <div class="row social-media-pc">
-                            <div class="d-flex icon-container p-0 pb-3">
-                                <a href="#" id="facebook-link">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="twitter-link">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="google-plus-link">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                </a>
-                                <a href="#" id="linkedin-link">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="partners">
-        <div class="bg-dark-2 py-5">
-            <div class="container px-lg-5">
-                <h1 class="text-center mb-5">
-                    Մենք համագործակցում ենք
-                </h1>
-
-                <div class='px-2 d-flex slick2'>
-                    <div>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                    <div class='px-2'>
-                        <img class="w-100" src="img/chart_print.png" alt="img">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-end">
-                    <div class="position-absolute d-flex">
-                        <div class="customArrow d-flex justify-content-center align-items-center me-3">
-                            &#10094;
-                        </div>
-                        <div class="customArrow d-flex justify-content-center align-items-center">
-                            &#10095;
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="earth" class="w-100">
-        <img class="w-100" src="img/earth.jpg" alt="earth">
-    </section>
-
+    
     <footer id="contacts">
         <div class="container py-5">
             <div class="row px-lg-5">
