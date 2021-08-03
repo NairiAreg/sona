@@ -207,10 +207,10 @@ button:focus:not(:focus-visible) {
 }
 
 .hexs-hover .col-md-3:first-child {
-    left: 12.5px;
+    left: 13px;
 }
 .hexs-hover .col-md-3:last-child {
-    left: -12.5px;
+    left: -13px;
 }
 .hexs-hover.m-100-neg .col-md-3:first-child {
     left: 25px;
@@ -696,6 +696,10 @@ a > span:before,
         margin: -50px 0;
     }
 
+    .hexs-hover.m-100-neg {
+        margin: -75px 0 !important;
+    }
+
     .hexs img:not(.w-100.h-100.position-absolute) {
         width: 50px;
     }
@@ -739,6 +743,10 @@ a > span:before,
 
     .m-100-neg {
         margin: -40px 0;
+    }
+    
+    .hexs-hover.m-100-neg {
+        margin: -64px 0 !important;
     }
 
     .hexs img:not(.w-100.h-100.position-absolute) {
