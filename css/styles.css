@@ -354,7 +354,7 @@ button:focus:not(:focus-visible) {
     text-decoration: none;
     line-height: 24px;
 }
-#ourWorks div a:before,
+/* #ourWorks div a:before,
 #ourWorks div a:after,
 a > span:before,
 #ourWorks div a > span:after {
@@ -415,8 +415,17 @@ a > span:before,
 .selectedFilter > span:before,
 .selectedFilter > span:after {
     transform: translate(0, 0) !important;
-}
+} */
 
+#ourWorks div a > span > img {
+    transition: 0.3s;
+    opacity: 0;
+    right: 0;
+    z-index: -1;
+}
+#ourWorks div a > span:hover > img {
+    opacity: 1;
+}
 /* //! Our Works Hovers */
 
 /* //! Brandings Hovers */
@@ -824,6 +833,34 @@ a > span:before,
 
     #services > div > div > div > img {
         width: 100px;
+    }
+    #services .d-lg-none.hexs > div{
+        width: 240px;
+        height: 260px;
+        margin: -50px 0;
+    }
+    #services .d-lg-none.hexs {
+        width: 360px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #services,#services > .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #services .d-lg-none.hexs>div:nth-child(even)  {
+        position: relative;
+        left: 120px;
+    }
+    #services .d-lg-none.hexs>div:nth-child(odd)  {
+        position: relative;
+        left: 0;
+    }
+
+    #services .hexs h3{
+        font-size: 16px;
     }
 }
 
