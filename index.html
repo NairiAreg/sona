@@ -35,7 +35,7 @@
                 <form id="callback"
                     class="needs-validation align-items-center d-flex flex-column modal-body p-5 position-relative"
                     novalidate>
-                    <h3 class="mb-5 text-center">Շնորհակալություն գործարքը հաստատվծ է</h3>
+                    <h3 class="mb-5 text-center">Շնորհակալություն գործարքը հաստատված է</h3>
                     <p class="text-secondary">Մեր մասնագետը շուտով կապ կհաստատի Ձեզ հետ։ Հարցերի դեպքում զանգահարեք</p>
                     <div class="d-flex align-items-center mt-4">
                         <img src="img/tel.png" alt="tel" class="me-4">
@@ -56,11 +56,11 @@
                     class="needs-validation align-items-center d-flex flex-column modal-body position-relative"
                     novalidate>
                     <h3 class="mb-3">Հետադարձ Կապ</h3>
-                    <input type="text" placeholder="Անուն" class="form-control mb-3" required>
+                    <input type="text" placeholder="Անուն" class="form-control" required>
                     <div class="invalid-feedback">
                         Required name.
                     </div>
-                    <input type="tel" placeholder="Հեռախոսահամար*" class="form-control mb-3" id="telephone" required>
+                    <input type="tel" placeholder="Հեռախոսահամար*" class="form-control mt-3" id="telephone" required>
                     <div class="invalid-feedback">
                         Required phone number.
                     </div>
@@ -214,6 +214,38 @@
                         նպատակ լինել առաջատար։ Մենք ոչ միայն համագործակցում ենք Հայաստանյան այլ նաև արտասահմանյան
                         հաճախորդների հետ։ Միշտ պատրաստ ենք փորձարկումների, ռիսկային ենք և չենք վախենում նորություններից։
                         Առաջնային ենք համարում հաճախորդի շահերը, կարևորում նրա ցանկությունները և բիզնեսի զարգացումը։</p>
+                    <div class="d-flex w-100 justify-content-center">
+                        <button type='button' data-bs-toggle="modal" data-bs-target="#aboutUsModal"
+                            class="btn btn-dark d-sm-none">Կարդալ ավելին</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Մեր մասին</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Մենք երիտասարդ և Էներգիայով լի թիմ ենք, որը ունի բարձր հավակնություններ ձգտումներ և
+                                    նպատակ լինել առաջատար։ Մենք ոչ միայն համագործակցում ենք Հայաստանյան այլ նաև
+                                    արտասահմանյան
+                                    հաճախորդների հետ։ Միշտ պատրաստ ենք փորձարկումների, ռիսկային ենք և չենք վախենում
+                                    նորություններից։
+                                    Առաջնային ենք համարում հաճախորդի շահերը, կարևորում նրա ցանկությունները և բիզնեսի
+                                    զարգացումը։Մենք
+                                    երիտասարդ և Էներգիայով լի թիմ ենք, որը ունի բարձր հավակնություններ ձգտումներ և
+                                    նպատակ լինել առաջատար։ Մենք ոչ միայն համագործակցում ենք Հայաստանյան այլ նաև
+                                    արտասահմանյան
+                                    հաճախորդների հետ։ Միշտ պատրաստ ենք փորձարկումների, ռիսկային ենք և չենք վախենում
+                                    նորություններից։
+                                    Առաջնային ենք համարում հաճախորդի շահերը, կարևորում նրա ցանկությունները և բիզնեսի
+                                    զարգացումը։</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,7 +308,7 @@
                 </div>
             </div> -->
             <div class="d-lg-none hexs">
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex1">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -299,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex2">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -322,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex3">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -345,7 +377,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -368,7 +400,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex5">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -391,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card flip-mobile" type='button' data-bs-toggle="modal" data-bs-target="#mobileHex6">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div
@@ -900,7 +932,7 @@
 
                 <div class="modal fade slider-modal" id="branding4" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mw-90">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Branding 4</h5>
@@ -908,49 +940,39 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="demo">
-                                    <ul class="lightSlider">
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
-                                        </li>
-                                        <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
-                                        </li>
-                                        <li
-                                            data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
-                                        </li>
-                                        <li
-                                            data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
-                                        </li>
-                                        <li
-                                            data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
-                                            <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
-                                        </li>
-                                    </ul>
-                                </div>
+                                <div class="imglist">
+                                    <a href="https://picsum.photos/1000/1000" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/1000/1000" />
+                                    </a>
+                                  
+                                    <a href="https://picsum.photos/900/900" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/900/900" />
+                                    </a>
+                                    
+                                    <a href="https://picsum.photos/1100/1100" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/1100/1100" />
+                                    </a>
+                                  
+                                    <a href="https://picsum.photos/1000/800" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/1000/800" />
+                                    </a>
+                                  
+                                    <a href="https://picsum.photos/800/1000" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/800/1000" />
+                                    </a>
+                                  
+                                    <a href="https://picsum.photos/900/1000" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/900/1000" />
+                                    </a>
+                                  
+                                    <a href="https://picsum.photos/1000/900" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/1000/900" />
+                                    </a>
+                                    
+                                    <a href="https://picsum.photos/850/850" data-fancybox="images">
+                                      <img class="w-100 my-2" src="https://picsum.photos/850/850" />
+                                    </a>
+                                  </div>                                  
                             </div>
                         </div>
                     </div>
@@ -1104,7 +1126,7 @@
         </div>
     </section>
 
-    <section id="partners">
+    <section id="partners" class="z-1">
         <div class="container">
             <h1 class="text-center mb-5">
                 Մեր Թիմը
@@ -1327,6 +1349,99 @@
             </div>
         </div>
     </footer>
+
+
+
+    <div class="modal fade" id="mobileHex1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobileHex2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobileHex3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobileHex4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobileHex5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobileHex6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="mw-90 modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Մեր մասին</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi aspernatur ex
+                        placeat doloremque impedit dolorum eaque consequuntur nihil. Harum natus voluptatibus at
+                        sunt maxime esse voluptatum dolor eligendi rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- //! Slider -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
