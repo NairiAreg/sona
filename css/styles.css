@@ -427,6 +427,8 @@ a > span:before,
     opacity: 0;
     right: 0;
     z-index: -1;
+    top: -10px;
+    right: -15px;
 }
 #ourWorks div a > span:hover > img {
     opacity: 1;
@@ -544,6 +546,7 @@ a > span:before,
 
 .social-media-pc .icon-container {
     font-size: 20px;
+    padding-left: 10px !important;
 }
 .social-media-pc .icon-container a {
     display: flex;
@@ -697,10 +700,10 @@ a > span:before,
     height: auto;
     width: 100%;
 }
-
+*/
 .w-40 {
     width: 40%;
-} */
+} 
 
 /* //! Slider */
 
